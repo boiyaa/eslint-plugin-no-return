@@ -18,6 +18,10 @@ var rule = require("../../../lib/rules/no-return"),
 //------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
+var errors = [{
+    message: "Unexpected return, use concise body syntax instead.",
+    type: "ReturnStatement"
+}];
 ruleTester.run("no-return", rule, {
 
     valid: [
@@ -29,24 +33,15 @@ ruleTester.run("no-return", rule, {
     invalid: [
         {
             code: "function foo(bar) { var baz = bar * 2; return baz; }",
-            errors: [{
-                message: "Unexpected return, use concise body syntax instead.",
-                type: "ReturnStatement"
-            }]
+            errors
         },
         {
             code: "var foo = function (bar) { var baz = bar * 2; return baz; };",
-            errors: [{
-                message: "Unexpected return, use concise body syntax instead.",
-                type: "ReturnStatement"
-            }]
+            errors
         },
         {
             code: "var foo = bar => { var baz = bar * 2; return baz; };",
-            errors: [{
-                message: "Unexpected return, use concise body syntax instead.",
-                type: "ReturnStatement"
-            }]
+            errors
         }
     ]
 });
