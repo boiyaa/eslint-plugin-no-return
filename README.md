@@ -1,5 +1,9 @@
 # eslint-plugin-no-return
 
+
+[![npm](https://img.shields.io/npm/v/eslint-plugin-no-return.svg)](https://www.npmjs.com/package/eslint-plugin-no-return)
+[![Build Status](https://travis-ci.org/boiyaa/eslint-plugin-no-return.svg?branch=master)](https://travis-ci.org/boiyaa/eslint-plugin-no-return)
+
 ESLint plugin to disable return statement
 
 ## Installation
