@@ -47,4 +47,4 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rule
 
-* `no-return` - disallow `return` statements
+* [`no-return`](docs/rules/no-return.md) - disallow `return` statements
