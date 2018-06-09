@@ -8,4 +8,5 @@ node_js:
 before_install:
   - '[[ $(node -v) =~ ^v4.*$ ]] || npm install -g greenkeeper-lockfile'
 before_script: '[[ $(node -v) =~ ^v4.*$ ]] || greenkeeper-lockfile-update'
+install: '[[ $(node -v) =~ ^v4.*$ ]] || npm install'
 after_script: '[[ $(node -v) =~ ^v4.*$ ]] || greenkeeper-lockfile-upload'
