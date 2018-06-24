@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-return",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "ESLint plugin to disallow return statement",
   "keywords": [
     "eslint",
