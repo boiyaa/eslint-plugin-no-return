@@ -20,7 +20,7 @@
     "mocha": "^5.2.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6.14"
   },
   "license": "MIT",
   "repository": "boiyaa/eslint-plugin-no-return"
