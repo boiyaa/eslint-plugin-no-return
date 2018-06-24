@@ -16,11 +16,11 @@
     "requireindex": "~1.2.0"
   },
   "devDependencies": {
-    "eslint": "~4.19.1",
+    "eslint": "~5.0.0",
     "mocha": "^5.2.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6.14"
   },
   "license": "MIT",
   "repository": "boiyaa/eslint-plugin-no-return"
